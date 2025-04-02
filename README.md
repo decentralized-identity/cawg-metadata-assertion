@@ -1,6 +1,6 @@
 # Creator Assertions Working Group Metadata Assertion
 
-This repository contains the source material for the current working draft of the [Creator Assertions Working Group](https://creator-assertions.github.io/)'s metadata assertion. A rendered version of this specification can be found [here](https://creator-assertions.github.io/metadata/).
+This repository contains the source material for the current working draft of the [Creator Assertions Working Group](https://cawg.io/)'s metadata assertion. A rendered version of this specification can be found [here](https://cawg.io/metadata/).
 
 ## Governance
 
@@ -10,7 +10,7 @@ This specification is subject to the [Community Specification License 1.0](https
 
 The site content is built using [Antora](https://antora.org), which takes Asciidoc (.adoc) plain text files and renders them to HTML and other formats.
 
-The primary content of this document is available in [docs/modules/ROOT/pages/index.adoc](https://github.com/creator-assertions/metadata-assertion/blob/main/docs/modules/ROOT/pages/index.adoc) in this repo.
+The primary content of this document is available in [docs/modules/ROOT/pages/index.adoc](https://github.com/decentralized-identity/cawg-metadata-assertion/blob/main/docs/modules/ROOT/pages/index.adoc) in this repo.
 
 ## Local preview
 
