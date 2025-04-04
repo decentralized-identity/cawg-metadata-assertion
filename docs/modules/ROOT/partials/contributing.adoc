@@ -3,13 +3,4 @@
 
 _This section is non-normative._
 
-This publicly available specification was approved by the Creator Assertions Working Group on 18 March 2024.
-
-If you wish to contribute to the development of a future version of this specification, you are invited to:
-
-* link:++https://cawg.io/index.html#_contributing++[Read the CAWG contributing guide]
-* link:https://github.com/creator-assertions/metadata-assertion/issues[File an issue for discussion]
-* link:https://github.com/creator-assertions/metadata-assertion/pulls[File a pull request (suggested revision)]
-* link:++https://creator-assertions.github.io/index.html#_meeting_schedule++[Attend a working group meeting]
-* xref:maintainers[Contact one of the maintainers directly]
-
+This specification is an active working draft. If you wish to contribute to its development, please view the link:++https://cawg.io/#_contributing++[CAWG contributing guide].
