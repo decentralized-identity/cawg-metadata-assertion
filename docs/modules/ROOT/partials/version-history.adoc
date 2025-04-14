@@ -3,14 +3,7 @@
 
 _This section is non-normative._
 
-*28 February 2024*
+*14 April 2025*
 
-* Prepare 1.0-draft version, derived from final description of link:++https://c2pa.org/specifications/specifications/1.4/specs/C2PA_Specification.html#_common_metadata++[common metadata assertion in C2PA 1.4 Technical Specification].
-
-*04 March 2024*
-
-* Promoted from pre-draft to draft status.
-
-*18 March 2024*
-
-* Approved 1.0 version of this specification.
+* Started 1.1-draft version of this specification, derived from the xref:1.0@metadata:ROOT:index.adoc[1.0 version of this specification]. (xref:1.0@metadata:ROOT:index.adoc#_version_history[Version history])
+* Transition to DIF draft specification.
