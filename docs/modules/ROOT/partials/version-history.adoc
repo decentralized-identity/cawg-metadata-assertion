@@ -7,3 +7,7 @@ _This section is non-normative._
 
 * Started 1.1-draft version of this specification, derived from the xref:1.0@metadata:ROOT:index.adoc[1.0 version of this specification]. (xref:1.0@metadata:ROOT:index.adoc#_version_history[Version history])
 * Transition to DIF draft specification.
+
+*06 May 2025*
+
+* Working group approved as 1.1 final.
