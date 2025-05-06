@@ -17,7 +17,7 @@ include::partial$common/foreword.adoc[]
 include::partial$common/toc.adoc[]
 
 include::partial$introduction.adoc[]
- 
+
 include::partial$normative-references.adoc[]
 
 include::partial$assertion-definition.adoc[]
