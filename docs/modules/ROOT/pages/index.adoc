@@ -4,58 +4,22 @@
 :sectanchors:
 :sectnums:
 
-The *link:https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html[C2PA technical specification]* allows actors in a workflow to make cryptographically signed assertions about the produced C2PA asset.
-
-This specification describes a C2PA assertion referred to here as the *metadata assertion* that can be added to a C2PA Manifest to allow metadata from various metadata standards (including, but not limited to, XMP, IPTC, and Exif) to be cryptographically bound to the C2PA Manifest.
-
-This specification differs from the link:++https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_metadata++[`c2pa.metadata` assertion] from the C2PA technical specification in that there are no restrictions on the metadata fields which can be represented.
+include::partial$abstract.adoc[]
 
 *Version 1.1 Draft 14 April 2025* · xref:_version_history[]
 
-include::partial$license.adoc[]
-include::partial$contributing.adoc[]
-include::partial$foreword.adoc[]
-include::partial$toc.adoc[]
+include::partial$common/license.adoc[]
 
-== Introduction
+include::partial$common/contributing.adoc[]
 
-_This section is non-normative._
+include::partial$common/foreword.adoc[]
 
-=== History
+include::partial$common/toc.adoc[]
 
-In versions 1.3 and earlier of the link:https://c2pa.org/specifications/specifications/1.4/specs/C2PA_Specification.html[C2PA technical specification], there were individual assertions for each metadata standard (e.g., IPTC, EXIF). These were coalesced into link:++https://c2pa.org/specifications/specifications/1.4/specs/C2PA_Specification.html#_common_metadata++[a single “common” metadata assertion] in version 1.4 of the specification. In link:++https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#metadata_annex++[version 2.0 of the C2PA technical specification], new restrictions were added as to which metadata content could be reflected in the built-in `c2pa.metadata` assertion.
+include::partial$introduction.adoc[]
+ 
+include::partial$normative-references.adoc[]
 
-This specification is not a product of the C2PA, but provides a mechanism for metadata that can no longer be expressed in the `c2pa.metadata` assertion to be included in a C2PA Manifest.
-
-== Normative references
-
-* https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html[C2PA technical specification, version 2.1]
-
-== Assertion definition
-
-A CAWG metadata assertion SHALL have a label of `cawg.metadata` and SHALL follow the format for metadata assertions as described below:
-
-"Each metadata assertion shall contain a single JSON content type box containing the https://www.w3.org/TR/json-ld11/[JSON-LD] serialization of one or more metadata values. The `@context` property within the JSON-LD object shall be included, and used to provide context / namespaces for the metadata standards being specified.  The recommended procedure to create this JSON-LD object is to first create an https://www.iso.org/standard/57421.html[XMP Data Model] representation of the metadata and then serialize that to JSON-LD using the https://www.iso.org/standard/79384.html[JSON-LD serialization of XMP]. The JSON-LD would then be stored as a JSON content type box."
--- link:++https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_common_requirements++[Section 18.14.1&comma; “Metadata: Common Requirements&comma;” of the C2PA technical specification version 2.0]
-
-IMPORTANT: The restrictions expressed in link:++https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#metadata_annex++[Appendix A, “Implementation Details for `c2pa.metadata`,” in the C2PA technical specification] SHALL NOT apply to this assertion.
-
-=== Examples
-
-_This section is non-normative._
-
-An example of an common metadata assertion for an image:
-
-[source,json]
-----
-include::partial$examples/common-metadata-image.jsonld[]
-----
-
-An example of an common metadata assertion for a PDF:
-
-[source,json]
-----
-include::partial$examples/common-metadata-pdf.jsonld[]
-----
+include::partial$assertion-definition.adoc[]
 
 include::partial$version-history.adoc[]
