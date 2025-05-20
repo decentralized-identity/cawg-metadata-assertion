@@ -20,6 +20,8 @@ include::partial$introduction.adoc[]
 
 include::partial$normative-references.adoc[]
 
+include::partial$common/terms.adoc[]
+
 include::partial$assertion-definition.adoc[]
 
 include::partial$version-history.adoc[]
