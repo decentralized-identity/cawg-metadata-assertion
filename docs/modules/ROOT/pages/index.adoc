@@ -23,3 +23,5 @@ include::partial$normative-references.adoc[]
 include::partial$assertion-definition.adoc[]
 
 include::partial$version-history.adoc[]
+
+include::partial$media-identifiers.adoc[]
