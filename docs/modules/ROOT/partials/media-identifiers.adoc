@@ -6,7 +6,7 @@ _This section is non-normative._
 A commercial work of art (recorded music, motion picture, etc.) may have a large number of contributors who should be identified as contributors to a single C2PA asset.
 Various media industries have well-established identifiers for various individual talent professionals (musicians, actors, directors, etc.) and organizations (e.g. ___).
 
-It often not feasible to have each individual contributor generate their own _link:https://cawg.io/identity/1.1/[identity assertion]_ both because the number of contributors (and thus signers) would become unwieldy and these identifiers are often not provisioned with corresponding private key materials for signing purposes.
+It often not feasible to have each individual contributor generate their own _link:https://cawg.io/identity/1.1/[identity assertion]_ both because it is often not logistically feasible to have individual contributors involved in the content signing process and these identifiers are often not provisioned with corresponding private key materials for signing purposes.
 
 The CAWG recommends that such identifiers be described as follows:
 
