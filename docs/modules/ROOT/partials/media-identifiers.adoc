@@ -6,6 +6,10 @@ _This section is non-normative._
 A commercial work of art (recorded music, motion picture, etc.) may have a large number of contributors who should be identified as contributors to a single C2PA asset.
 Various media industries have well-established identifiers for various individual talent professionals (musicians, actors, directors, etc.) and organizations (e.g. ___).
 
+_(TO DO: Would like to describe *content* identifiers in addition to individual/organizational idendentifiers.)_
+
+_(TO DO: How to specify that an actor performed a specific role? May not be feasible with existing Dublin Core mechanism. Possible there is no extant standard for more nuanced role descriptions.)_
+
 It is often not feasible to have each individual contributor generate their own _link:https://cawg.io/identity/1.1/[identity assertion]_ both because it is often not logistically feasible to have individual contributors involved in the content signing process and these identifiers are often not provisioned with corresponding private key materials for signing purposes.
 
 The CAWG recommends that such identifiers be described as follows:
@@ -52,3 +56,23 @@ _(TO DO: The following is an example of a CAWG metadata assertion adapted from t
 ----
 
 _(TO DO: Provide example for a specific media industry segment of who would be an appropriate packager/signer.)_
+
+_(TO DO: Refine the wording:)_ An example of the CAWG metadata assertion using two common standards that are freely-resolvable and globally-unique identifiers as defined by other standards bodies.
+
+[[person-identifier-example]]
+[source,json]
+.Example of a CAWG metadata assertion (DRAFT with EIDR and HAND identifiers)
+----
+{
+   "@context" : {
+        "dc" : "http://purl.org/dc/elements/1.1/",
+   },
+   "dc:contributor" : "urn:doi:10.23/EF98-D5B3-1931-90A8-F50C",
+   "dc:identifier" : "urn:eidr:10.5240:7791-8534-2C23-9030-8610-5",
+   "dc:title" : "TO DO",
+   "dc:description" : "TO DO",
+   "dc:publisher" : "...",
+   "dc:date" : "1903-12-01",
+   "dc:type" : "Image",
+}
+----
