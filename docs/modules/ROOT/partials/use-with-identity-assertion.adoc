@@ -2,4 +2,4 @@
 
 When a CAWG *metadata assertion* is included in `gathered_assertions` in the link:++https://c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html#_schema++[C2PA Claim schema], meaning that the provided metadata is not attributed to the signer of the C2PA Manifest, it is RECOMMENDED to include this assertion as a _link:++https://cawg.io/identity/1.1/#_referenced_assertions++[referenced assertion]_ within a CAWG _link:https://cawg.io/identity/1.1/[identity assertion]._
 
-This reference SHALL constitute an attestation by the _link:++https://cawg.io/identity/1.1/#_named_actor++[named actor]_ of that _link:https://cawg.io/identity/1.1/[identity assertion]_ to the accuracy of the metadata provided.
+This reference SHALL constitute an attestation by the _link:++https://cawg.io/identity/1.1/#_named_actor++[named actor]_ of that _link:https://cawg.io/identity/1.1/[identity assertion]_ to the accuracy of the provided metadata.
