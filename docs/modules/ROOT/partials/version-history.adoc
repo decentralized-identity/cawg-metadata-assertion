@@ -6,3 +6,8 @@ _This section is non-normative._
 *20 May 2025*
 
 * Started 1.2-draft version of this specification, derived from the xref:1.1@metadata:ROOT:index.adoc[1.1 version of this specification]. (xref:1.1@metadata:ROOT:index.adoc#_version_history[Version history])
+
+*16 June 2025*
+
+* Updated C2PA technical spec references to use version 2.2.
+* Restored missing link to IETF standard terms.
