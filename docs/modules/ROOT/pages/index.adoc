@@ -6,7 +6,7 @@
 
 include::partial$abstract.adoc[]
 
-*Version 1.2 Draft 20 May 2025* · xref:_version_history[]
+*Version 1.2 Draft 16 June 2025* · xref:_version_history[]
 
 include::partial$common/license.adoc[]
 
@@ -20,7 +20,11 @@ include::partial$introduction.adoc[]
 
 include::partial$normative-references.adoc[]
 
+include::partial$common/terms.adoc[]
+
 include::partial$assertion-definition.adoc[]
+
+include::partial$use-with-identity-assertion.adoc[]
 
 include::partial$version-history.adoc[]
 
