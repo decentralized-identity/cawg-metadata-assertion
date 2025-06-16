@@ -10,3 +10,4 @@ _This section is non-normative._
 *16 June 2025*
 
 * Updated C2PA technical spec references to use version 2.2.
+* Restored missing link to IETF standard terms.
