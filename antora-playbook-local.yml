@@ -9,12 +9,15 @@ content:
     branches: HEAD
     tags:
     - v1.0
-    - v1.1
+    - v1.1-final
     start_path: docs
-ui: 
+
+ui:
   bundle:
-    url: https://cawg.io/antora-ui/ui-bundle-local.zip
+    url: https://cawg.io/antora-ui/ui-bundle.zip
     snapshot: true
+  supplemental_files: ./custom-ui/
+
 antora:
   extensions:
     - require: '@sntke/antora-mermaid-extension'
