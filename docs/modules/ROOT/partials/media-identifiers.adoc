@@ -3,14 +3,16 @@
 
 _This section is non-normative._
 
-A commercial work of art (recorded music, motion picture, etc.) may have a large number of contributors who should be identified as contributors to a single C2PA asset.
-Various media industries have well-established identifiers for various individual talent professionals (musicians, actors, directors, etc.) and organizations (e.g. ___).
+_(TO DO: Extract a portion of this to normative language.)_
 
-_(TO DO: Would like to describe *content* identifiers in addition to individual/organizational idendentifiers.)_
+A commercial work of art (recorded music, motion picture, etc.) may have a large number of contributors who should be identified as contributors to a single C2PA asset.
+Various media industries have well-established identifiers for various individual talent professionals (musicians, actors, directors, etc.), organizations (e.g. ___), and content (e.g. motion picture releases or individual recorded audio tracks).
 
 _(TO DO: How to specify that an actor performed a specific role? May not be feasible with existing Dublin Core mechanism. Possible there is no extant standard for more nuanced role descriptions.)_
 
-It is often not feasible to have each individual contributor generate their own _link:https://cawg.io/identity/1.1/[identity assertion]_ both because it is often not logistically feasible to have individual contributors involved in the content signing process and these identifiers are often not provisioned with corresponding private key materials for signing purposes.
+It is often not feasible to have each individual contributor generate their own _link:https://cawg.io/identity/[identity assertion]_ both because:
+. It is often not logistically feasible to have individual contributors involved in the content signing process, and
+. These identifiers are often not provisioned with corresponding private key materials for signing purposes.
 
 The CAWG recommends that such identifiers be described as follows:
 
@@ -21,43 +23,13 @@ Some examples of relevant namespaces and fields include:
 ... link:https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/contributor/[`dc:contributor`] - An entity responsible for making contributions to the resource.
 ... link:https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/creator/[`dc:creator`] - An entity primarily responsible for making the resource.
 ... link:https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/publisher/[`dc:publisher`] - An entity responsible for making the resource available.
-.. _(TO DO: Review link:https://schema.org/CreativeWork[schema.org CreativeWork] to see if it can be leveraged in a compatible manner.)_
 .. _(TO DO: Are there other namespaces that are relevant for specific media segments?)_
-. Use a CAWG _link:https://cawg.io/identity/1.1/[identity assertion]_ signed by a trusted industry entity to vouch for the validity of the identifiers in the *metadata assertion.*
-_(TO DO: Provide definition of "trusted industry entity." Add link to "Use with identity assertion" section when PR #4 is merged.)_
+. Use a CAWG _link:https://cawg.io/identity[identity assertion]_ as described in xref:_use_with_identity_assertion[xrefstyle=full], signed by a trusted industry entity to vouch for the validity of the identifiers in the *metadata assertion.*
+A trusted industry entity in this context means an entity, such as a registrar or media packager, that is trusted within the industry to accurately record the identifiers in question.
 
 === Examples
 
-_(TO DO: The following is an example of a CAWG metadata assertion adapted from the work of JPEG Trust which can be used as a starting point for our discussion.)_
-
-[[dcmetadata-example]]
-[source,json]
-.Example of a CAWG metadata assertion
-----
-{
-   "@context" : {
-        "dc" : "http://purl.org/dc/elements/1.1/",
-   },
-   "dc:creator" : ["Stéphane de Sakutin", "self#jumbf=c2pa.assertions/cawg.identity"],
-   "dc:identifier" : "AFP_8XZ4ZA",
-   "dc:title" : "Address to the nation",
-   "dc:subject" : ["France","Politics","New Year"],
-   "dc:description" : "This photograph shows a television screen broadcasting French President Emmanuel Macron delivering his New Year wishes during an address to the nation from the Elysee Palace, in Paris, on December 31, 2020.",
-   "dc:publisher" : "https://u.afp.com/5t5x",
-   "dc:contributor" : ["Jeanne Parexemple", "self#jumbf=c2pa.assertions/cawg.identity_1"],
-   "dc:date" : "2020-12-31T20:14:00Z",
-   "dc:type" : "Image",
-   "dc:source" : "France 2 broadcast",
-   "dc:language" : "fr-FR",
-   "dc:relation" :  ["AFP_8XZ4ZF","AFP_8XZ4YT"],
-   "dc:coverage" :  ["Paris", "Elysée Palace"],
-   "dc:rights" :  "self#jumbf=c2pa.assertions/jpt.rights"
-}
-----
-
-_(TO DO: Provide example for a specific media industry segment of who would be an appropriate packager/signer.)_
-
-_(TO DO: Refine the wording:)_ An example of the CAWG metadata assertion using two common standards that are freely-resolvable and globally-unique identifiers as defined by other standards bodies.
+The following is an example of the CAWG metadata assertion using globally-unique, standards-based identifiers that can be freely resolved by visiting the link:https://www.doi.org[Digital Object Identifier (DOI) Foundation] web site to obtain additional authoritative information about the media asset.
 
 [[person-identifier-example]]
 [source,json]
@@ -67,8 +39,8 @@ _(TO DO: Refine the wording:)_ An example of the CAWG metadata assertion using t
    "@context" : {
         "dc" : "http://purl.org/dc/elements/1.1/",
    },
-   "dc:contributor" : "urn:doi:10.23/EF98-D5B3-1931-90A8-F50C",
-   "dc:identifier" : "urn:eidr:10.5240:7791-8534-2C23-9030-8610-5",
+   "dc:contributor" : ["Edwin Stanton Porter", "urn:doi:10.23/EF98-D5B3-1931-90A8-F50C"],
+   "dc:identifier" : ["The Great Train Robbery", "urn:eidr:10.5240/7791-8534-2C23-9030-8610-5"],
    "dc:title" : "TO DO",
    "dc:description" : "TO DO",
    "dc:publisher" : "...",
