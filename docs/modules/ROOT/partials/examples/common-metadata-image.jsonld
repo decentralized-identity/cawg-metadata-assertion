@@ -6,7 +6,7 @@
 		"Iptc4xmpCore": "http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/",
 		"Iptc4xmpExt": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/",
 		"dc" : "http://purl.org/dc/elements/1.1/",
-		"photoshop" : "http://ns.adobe.com/photoshop/1.0/",
+		"photoshop" : "http://ns.adobe.com/photoshop/1.0/"
 	},
 	"photoshop:DateCreated": "Aug 31, 2022", 
 	"Iptc4xmpExt:DigitalSourceType": "https://cv.iptc.org/newscodes/digitalsourcetype/digitalCapture",
