@@ -30,6 +30,7 @@ jobs:
             BASE_SHA="4b825dc642cb6eb9a060e54bf8d69288fbee4904"
           fi
         fi
+        BASE_SHA="bf798b90287d31fa2ce5c61a2bddc4fa83d2d211"
         
         echo "Comparing against: $BASE_SHA"
         
