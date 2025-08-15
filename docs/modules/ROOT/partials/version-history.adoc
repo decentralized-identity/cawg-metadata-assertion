@@ -12,3 +12,7 @@ _This section is non-normative._
 * Updated C2PA technical spec references to use version 2.2.
 * Restored missing link to IETF standard terms.
 * Recommend use of identity assertion to attest to metadata authorship.
+
+*15 August 2025*
+
+* Fix a JSON syntax error in one of the examples.
