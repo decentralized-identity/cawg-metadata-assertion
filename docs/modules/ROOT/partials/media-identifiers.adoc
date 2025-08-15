@@ -11,6 +11,7 @@ Various media industries have well-established identifiers for various individua
 _(TO DO: How to specify that an actor performed a specific role? May not be feasible with existing Dublin Core mechanism. Possible there is no extant standard for more nuanced role descriptions.)_
 
 It is often not feasible to have each individual contributor generate their own _link:https://cawg.io/identity/[identity assertion]_ both because:
+
 . It is often not logistically feasible to have individual contributors involved in the content signing process, and
 . These identifiers are often not provisioned with corresponding private key materials for signing purposes.
 
