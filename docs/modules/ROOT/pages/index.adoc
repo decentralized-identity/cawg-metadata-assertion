@@ -26,6 +26,6 @@ include::partial$assertion-definition.adoc[]
 
 include::partial$use-with-identity-assertion.adoc[]
 
-include::partial$version-history.adoc[]
-
 include::partial$media-identifiers.adoc[]
+
+include::partial$version-history.adoc[]
