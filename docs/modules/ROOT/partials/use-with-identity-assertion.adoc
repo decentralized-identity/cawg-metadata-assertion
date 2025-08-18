@@ -4,5 +4,5 @@ When a CAWG *metadata assertion* is included in `gathered_assertions` in the lin
 
 This reference SHALL constitute an attestation by the _link:++https://cawg.io/identity/1.1/#_named_actor++[named actor]_ of that _link:https://cawg.io/identity/1.1/[identity assertion]_ to the accuracy of the provided metadata.
 
-A CAWG *metadata assertion* MAY appear without a _link:++https://cawg.io/identity/1.1/#_referenced_assertions++[referenced assertion]._
+A CAWG *metadata assertion* MAY appear without a corresponding _link:https://cawg.io/identity/1.1/[identity assertion]._
 When this occurs, it is RECOMMENDED that any user experience that chooses to display such metadata warn its user that such metadata comes without any claim of responsibility or attribution.
