@@ -27,7 +27,7 @@ A CAWG metadata assertion MAY also contain other metadata not directly described
 
 === Reference external data sources
 
-When possible, the use of externally-defined authoritative data sources, such as _(TO DO: name one or two)_ is RECOMMENDED in preference to exhaustively listing all potential participants in a work of digital media.
+When possible, the use of data sources hosted by trusted industry entities, such as _(TO DO: name one or two)_ is RECOMMENDED in preference to exhaustively listing all potential participants in a work of digital media.
 Such data sources SHOULD be unambiguously resolvable via an IETF-registered URN scheme, such as EIDR or DOI. _(TO DO: Are these appropriate examples? If so, include links?)_
 
 === Attestation for a media industry metadata assertion
