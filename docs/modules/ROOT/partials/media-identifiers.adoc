@@ -12,7 +12,7 @@ It is often not feasible to have each individual contributor generate their own 
 . It is often not logistically feasible to have individual contributors involved in a signing process relating to the final rendered content, and
 . These identifiers are often not provisioned with corresponding private key materials for signing purposes.
 
-=== Use of externally-defined identifiers
+=== Use externally-defined namespaces and field names
 
 To the maximum extent feasible, existing link:https://www.iana.org/assignments/urn-namespaces/urn-namespaces.xhtml[IANA-issued namespace] and field names SHOULD be used to describe the media and various participants/contributors to the media. The use of items in the link:++https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-3++[Dublin Core elements namespace], typically prefixed as `dc`, is RECOMMENDED. Some examples of preferred items in the Dublin Core namespace are:
 
@@ -24,11 +24,14 @@ To the maximum extent feasible, existing link:https://www.iana.org/assignments/u
 IMPORTANT: This list is not intended to be exhaustive; implementers are encouraged to refer directly to the link:++https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-3++[Dublin Core] documentation for a more complete list.
 
 A CAWG metadata assertion MAY also contain other metadata not directly described in this section.
+_(TO DO: Reword to make it more clear that metadata other than media identifiers can be used in the same metadata assertion. Discuss in full CAWG meeting.)_
 
-=== Reference external data sources
+=== Use externally-defined data sources and identifiers
 
 When possible, the use of data sources hosted by trusted industry entities, such as _(TO DO: name one or two)_ is RECOMMENDED in preference to exhaustively listing all potential participants in a work of digital media.
-Such data sources SHOULD be unambiguously resolvable via an IETF-registered URN scheme, such as EIDR or DOI. _(TO DO: Are these appropriate examples? If so, include links?)_
+Such data sources SHOULD be unambiguously resolvable via an IETF-registered URN scheme, such as EIDR or DOI.
+_(TO DO: Are these appropriate examples? If so, include links?)_
+_(TO DO: Recorded music may not have suitable public identifiers. Research.)_
 
 === Attestation for a media industry metadata assertion
 
