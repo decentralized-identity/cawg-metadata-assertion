@@ -9,7 +9,7 @@ Various media industries have well-established identifiers for various individua
 
 It is often not feasible to have each individual contributor generate their own _link:https://cawg.io/identity/[identity assertion]_ because:
 
-. It is often not logistically feasible to have individual contributors involved in the content signing process, and
+. It is often not logistically feasible to have individual contributors involved in a signing process relating to the final rendered content, and
 . These identifiers are often not provisioned with corresponding private key materials for signing purposes.
 
 === Use of externally-defined identifiers
