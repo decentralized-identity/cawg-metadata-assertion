@@ -29,9 +29,8 @@ _(TO DO: Reword to make it more clear that metadata other than media identifiers
 === Use externally-defined data sources and identifiers
 
 When possible, the use of data sources hosted by trusted industry entities, such as _(TO DO: name one or two)_ is RECOMMENDED in preference to exhaustively listing all potential participants in a work of digital media.
-Such data sources SHOULD be unambiguously resolvable via an IETF-registered URN scheme, such as EIDR or DOI.
+Such data sources SHOULD be unambiguously and publicly resolvable via an IETF-registered URN scheme, such as EIDR or DOI.
 _(TO DO: Are these appropriate examples? If so, include links?)_
-_(TO DO: Recorded music may not have suitable public identifiers. Research.)_
 
 === Attestation for a media industry metadata assertion
 
