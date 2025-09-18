@@ -14,6 +14,15 @@ It is often not feasible to have each individual contributor generate their own 
 
 NOTE: A CAWG metadata assertion may contain a mixture of media identifiers as described in this section and any other metadata otherwise permitted in a metadata assertion.
 
+[IMPORTANT]
+====
+This guidance was developed with publicly-facing media workflows in mind.
+(In other words, the metadata assertions described in this section are designed primarily for use in media distributed to the general public via streaming services and other public Internet services.)
+
+A related set of workflows would involve metadata used _during_ production of a work of media (for instance, individual recordings that would later be composited into a publicly-released media asset).
+The CAWG has not developed guidance for such workflows at this time.
+====
+
 === Use externally-defined namespaces and field names
 
 To the maximum extent feasible, existing link:https://www.iana.org/assignments/urn-namespaces/urn-namespaces.xhtml[IANA-issued namespace] and field names SHOULD be used to describe the media and various participants/contributors to the media. The use of items in the link:++https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-3++[Dublin Core elements namespace], typically prefixed as `dc`, is RECOMMENDED. Some examples of preferred items in the Dublin Core namespace are:
@@ -27,9 +36,8 @@ IMPORTANT: This list is not intended to be exhaustive; implementers are encourag
 
 === Use externally-defined data sources and identifiers
 
-When possible, the use of data sources hosted by trusted industry entities, such as _(TO DO: name one or two)_ is RECOMMENDED in preference to exhaustively listing all potential participants in a work of digital media.
-Such data sources SHOULD be unambiguously and publicly resolvable via an IETF-registered URN scheme, such as EIDR or DOI.
-_(TO DO: Are these appropriate examples? If so, include links?)_
+When possible, the use of data sources hosted by trusted industry entities, such as https://www.eidr.org[EIDR] or https://www.doi.org[DOI] is RECOMMENDED in preference to exhaustively listing all potential participants in a work of digital media.
+Such data sources SHOULD be unambiguously and publicly resolvable via an IETF-registered URN scheme.
 
 === Attestation for a media industry metadata assertion
 
