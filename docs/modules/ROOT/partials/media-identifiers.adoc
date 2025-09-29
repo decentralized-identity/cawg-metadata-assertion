@@ -39,6 +39,9 @@ IMPORTANT: This list is not intended to be exhaustive; implementers are encourag
 When possible, the use of data sources hosted by trusted industry entities, such as https://www.eidr.org[EIDR] or https://www.doi.org[DOI] is RECOMMENDED in preference to exhaustively listing all potential participants in a work of digital media.
 Such data sources SHOULD be unambiguously and publicly resolvable via an IETF-registered URN scheme.
 
+IMPORTANT: Any value found in a *metadata assertion* that begins with the prefix `urn:` SHOULD be understood as a URN and not as a human-readable value.
+This specification takes no position on when or whether the URN should be resolved by a metadata assertion consumer application or its user.
+
 === Attestation for a media industry metadata assertion
 
 A *metadata assertion* containing media industry identifiers as described in this section SHOULD be used in combination with a CAWG _link:https://cawg.io/identity[identity assertion,]_ as described in xref:_use_with_identity_assertion[xrefstyle=full], signed by a trusted industry entity to vouch for the validity of the identifiers in the *metadata assertion.*
