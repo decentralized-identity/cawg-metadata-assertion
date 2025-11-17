@@ -1,0 +1,69 @@
+== Use with media industry identifiers
+
+=== Use case
+
+_This section is non-normative._
+
+A work of digital media (recorded music, motion picture, stock photography, etc.) may have a large number of contributors who should be identified as contributors to a single C2PA asset.
+Various media industries have well-established identifiers for various individual talent professionals (musicians, actors, directors, etc.), organizations (production companies, record labels, news organizations, etc.), and content (motion picture releases or individual recorded audio tracks, etc.).
+
+It is often not feasible to have each individual contributor generate their own _link:https://cawg.io/identity/[identity assertion]_ because:
+
+. It is often not logistically feasible to have individual contributors involved in a signing process relating to the final rendered content, and
+. These identifiers are often not provisioned with corresponding private key materials for signing purposes.
+
+NOTE: A CAWG metadata assertion may contain a mixture of media identifiers as described in this section and any other metadata otherwise permitted in a metadata assertion.
+
+[IMPORTANT]
+====
+This guidance was developed with publicly-facing media workflows in mind.
+(In other words, the metadata assertions described in this section are designed primarily for use in media distributed to the general public via streaming services and other public Internet services.)
+
+A related set of workflows would involve metadata used _during_ production of a work of media (for instance, individual recordings that would later be composited into a publicly-released media asset).
+The CAWG has not developed guidance for such workflows at this time.
+====
+
+=== Use externally-defined namespaces and field names
+
+To the maximum extent feasible, existing link:https://www.iana.org/assignments/urn-namespaces/urn-namespaces.xhtml[IANA-issued namespace] and field names SHOULD be used to describe the media and various participants/contributors to the media. The use of items in the link:++https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-3++[Dublin Core elements namespace], typically prefixed as `dc`, is RECOMMENDED. Some examples of preferred items in the Dublin Core namespace are:
+
+* link:https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/contributor/[`dc:contributor`] - An entity responsible for making contributions to the resource.
+* link:https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/creator/[`dc:creator`] - An entity primarily responsible for making the resource.
+* link:https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/publisher/[`dc:publisher`] - An entity responsible for making the resource available.
+* link:https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/identifier[`dc:identifier`] - An unambiguous reference to the resource within a given context.
+
+IMPORTANT: This list is not intended to be exhaustive; implementers are encouraged to refer directly to the link:++https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-3++[Dublin Core] documentation for a more complete list.
+
+=== Use externally-defined data sources and identifiers
+
+When possible, the use of data sources hosted by trusted industry entities, such as https://www.eidr.org[EIDR] or https://www.doi.org[DOI] is RECOMMENDED in preference to exhaustively listing all potential participants in a work of digital media.
+Such data sources SHOULD be unambiguously and publicly resolvable via an IETF-registered URN scheme.
+
+IMPORTANT: Any value found in a *metadata assertion* that begins with the prefix `urn:` SHOULD be understood as a URN and not as a human-readable value.
+This specification takes no position on when or whether the URN should be resolved by a metadata assertion consumer application or its user.
+
+=== Attestation for a media industry metadata assertion
+
+A *metadata assertion* containing media industry identifiers as described in this section SHOULD be used in combination with a CAWG _link:https://cawg.io/identity[identity assertion,]_ as described in xref:_use_with_identity_assertion[xrefstyle=full], signed by a trusted industry entity to vouch for the validity of the identifiers in the *metadata assertion.*
+A trusted industry entity in this context means an entity, such as a registrar or media packager, that is trusted within the industry to accurately record the identifiers in question.
+
+=== Example
+
+_This section is non-normative._
+
+The following is an example of the CAWG metadata assertion using globally-unique, standards-based identifiers that can be freely resolved by visiting the link:https://www.doi.org[Digital Object Identifier (DOI) Foundation] web site to obtain additional authoritative information about the media asset.
+
+[[person-identifier-example]]
+[source,json]
+.Example of a CAWG metadata assertion with EIDR and HAND identifiers
+----
+{
+   "@context" : {
+        "dc" : "http://purl.org/dc/elements/1.1/",
+   },
+   "dc:contributor" : ["Edwin Stanton Porter", "urn:doi:10.23/EF98-D5B3-1931-90A8-F50C"],
+   "dc:identifier" : ["The Great Train Robbery", "urn:eidr:10.5240/7791-8534-2C23-9030-8610-5"],
+   "dc:date" : "1903-12-01",
+   "dc:type" : "MovingImage",
+}
+----
