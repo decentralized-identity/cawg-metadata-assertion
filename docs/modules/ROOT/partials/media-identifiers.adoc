@@ -34,7 +34,7 @@ To the maximum extent feasible, existing link:https://www.iana.org/assignments/u
 
 IMPORTANT: This list is not intended to be exhaustive; implementers are encouraged to refer directly to the link:++https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-3++[Dublin Core] documentation for a more complete list.
 
-IMPORTANT: These fields SHOULD NOT be used to provide information that is not _also_ in a https://cawg.io/identity[CAWG identity assertion].
+IMPORTANT: These fields SHOULD NOT be used to provide information that is _also_ in a https://cawg.io/identity[CAWG identity assertion].
 In other words, if a publisher were the actor signing an identity assertion, it MAY provide information about other contributors via a metadata assertion as described here, but it SHOULD NOT also include information about itself in the metadata assertion.
 
 === Use externally-defined data sources and identifiers
