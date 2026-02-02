@@ -3,3 +3,28 @@
 When a CAWG *metadata assertion* is included in `gathered_assertions` in the link:++https://c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html#_schema++[C2PA Claim schema], meaning that the provided metadata is not attributed to the signer of the C2PA Manifest, it is RECOMMENDED to include this assertion as a _link:++https://cawg.io/identity/1.1/#_referenced_assertions++[referenced assertion]_ within a CAWG _link:https://cawg.io/identity/1.1/[identity assertion]._
 
 This reference SHALL constitute an attestation by the _link:++https://cawg.io/identity/1.1/#_named_actor++[named actor]_ of that _link:https://cawg.io/identity/1.1/[identity assertion]_ to the accuracy of the provided metadata.
+
+=== Referencing the named actor from an identity assertion
+
+The _link:++https://cawg.io/identity/1.2/#_named_actor++[named actor]_ of an _link:https://cawg.io/identity/1.2/[identity assertion]_ MAY identify itself as having taken a specific role via the metadata assertion using a `self#jumbf` reference to the _link:https://cawg.io/identity/1.2/[identity assertion]_ using the syntax described in https://spec.c2pa.org/specifications/specifications/2.3/specs/C2PA_Specification.html#_embedded[§8.4.2.1, “Hashed URIs -> Embedded.”]
+
+==== Example
+
+_This section is non-normative._
+
+The following is an example of the CAWG metadata assertion using a reference to an identity assertion to provide information about the authorship of the media asset.
+
+[[self-jumbf-ref]]
+[source,json]
+.Example of a CAWG metadata assertion referencing a CAWG identity assertion
+----
+{
+    "@context": {
+        "dc": "http://purl.org/dc/elements/1.1/",
+    },
+    "dc:contributor": ["Edwin Stanton Porter", "urn:doi:10.23/EF98-D5B3-1931-90A8-F50C"],
+    "dc:publisher": ["Sarah Doe", "self#jumbf=c2pa.assertions/cawg.identity"],
+    "dc:identifier": "d46f69ad522145",
+    "dc:title": "A self-identifying example",
+}
+----
