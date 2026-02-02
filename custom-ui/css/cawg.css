@@ -1,3 +1,25 @@
+/* Fix anchor link scrolling to account for fixed header. */
+/* Enhanced CSS solution with immediate application and increased values */
+
+/* Apply scroll-padding immediately with higher values and max specificity */
+html.js html,
+html,
+*,
+body {
+  scroll-padding-top: 4.5rem !important;
+  scroll-behavior: auto !important; /* Disable smooth scrolling for immediate positioning */
+}
+
+/* Chrome-specific adjustment with higher value */
+@supports (-webkit-appearance: none) and (not (-webkit-touch-callout: none)) {
+  html.js html,
+  html,
+  *,
+  body {
+    scroll-padding-top: 5rem !important;
+  }
+}
+
 /* CAWG home page customizations */
 body.home .nav-container {
   display: none;
@@ -120,6 +142,23 @@ body.module-meeting-notes .nav-container {
 
 .nav-panel-explore .context {
   display: none; /* CAWG override from display: flex; */
+}
+
+.nav-panel-explore .ia-heading {
+  font-weight: 600;
+  font-size: 120%;
+  list-style-type: none;
+  margin-left: -.35rem;
+  margin-top: 3.5rem;
+  margin-bottom: .75rem;
+}
+
+.nav-panel-explore .ia-heading:first-of-type {
+  margin-top: .5rem;
+}
+
+.nav-panel-explore .component {
+  list-style-type: none;
 }
 
 .toolbar {
