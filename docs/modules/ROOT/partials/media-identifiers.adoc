@@ -59,11 +59,11 @@ The following is an example of the CAWG metadata assertion using globally-unique
 ----
 {
    "@context" : {
-        "dc" : "http://purl.org/dc/elements/1.1/",
+        "dc" : "http://purl.org/dc/elements/1.1/"
    },
    "dc:contributor" : ["Edwin Stanton Porter", "urn:doi:10.23/EF98-D5B3-1931-90A8-F50C"],
    "dc:identifier" : ["The Great Train Robbery", "urn:eidr:10.5240/7791-8534-2C23-9030-8610-5"],
    "dc:date" : "1903-12-01",
-   "dc:type" : "MovingImage",
+   "dc:type" : "MovingImage"
 }
 ----

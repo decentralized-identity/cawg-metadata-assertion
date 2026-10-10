@@ -20,3 +20,7 @@ _This section is non-normative._
 *17 November 2025*
 
 * Add guidance for handling of professional media identifiers.
+
+*10 October 2026*
+
+* Fix JSON syntax errors (trailing commas) in the media industry identifier example.
